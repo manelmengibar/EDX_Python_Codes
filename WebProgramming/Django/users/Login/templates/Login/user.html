@@ -1,0 +1,31 @@
+
+{% extends "Login/base.html" %}
+
+
+
+{% block title %}
+
+  Login
+
+{% endblock %}
+
+
+
+{% block body %}
+
+      <h1>Hello, {{user.first_name}}</h1>
+
+      <ul>
+
+          <li>Currently logged in as: {{ user.username}}</li>
+
+          <li>
+
+              <!Esto nos mostrará cada vuelo y nos permitirá acceder a cada una de sus URLs>
+              <a href="{% url 'logout' %}">Logout</a>
+
+          </li>
+
+      </ul>
+
+{% endblock %}

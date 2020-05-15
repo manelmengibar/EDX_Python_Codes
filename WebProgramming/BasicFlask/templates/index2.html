@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pau is coming!</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    {% if days < 30 %}
+
+    <h1>Queda menys d'un mes per veure al Pau!</h1>
+
+    {% else %}
+
+    <h1>Queden {{days}} dies per veure al Pau :)</h1>
+
+    {% endif %}
+
+  </body>
+</html>

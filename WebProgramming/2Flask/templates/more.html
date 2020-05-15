@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title> Manel's Website</title>
+
+  </head>
+
+  <body>
+
+
+    <h1>Membres de la nostra familia </h1>
+
+
+      <! Creem una llista>
+
+    <ul>
+
+      <!creem un loop mitjançant nomenclatura jinja + python>
+
+      {% for name in names %}
+
+        <! això afegeix un a un els elements de la llista mencionats al codi de python>
+
+        <li>{{name}}</li>
+
+      {% endfor %}
+
+    </ul>
+
+
+    <! això indica que volem lincar la url que sigui a la funció "index" del codi de python>
+    <a href="{{url_for('index')}}">Torna a la pàgina inicial</a>
+
+  </body>
+
+</html>

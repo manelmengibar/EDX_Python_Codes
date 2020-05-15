@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+
+      let counter = 0;
+
+      // Funcion que incrementa en uno el valor counter
+      function count() {
+        counter++;
+        document.querySelector('#counter').innerHTML = counter;
+      }
+    </script>
+    <title>Manel's website!</title>
+  </head>
+  <body>
+
+    <h1 id="counter">0</h1>
+
+    <button onclick="count()">Click Here!</button>
+  </body>
+</html>
